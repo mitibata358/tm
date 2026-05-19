@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【保存版】大阪都構想「法定協議会」設置議案を小学生でもわかるように解説！ | 道端俊彦 公式NOTE</title>
+    <meta name="description" content="大阪都構想の法定協議会設置議案について、子どもでもわかるようにやさしく、でも本質を外さずに解説します。なぜ今また動き出すのか、何が変わるのか、徹底解説！">
+
+    <!-- OGP / SNS -->
+    <meta property="og:title" content="大阪都構想「法定協議会」設置議案を小学生でもわかるように解説！">
+    <meta property="og:description" content="難しい言葉を使わずに、大阪都構想の法定協議会とは何かを徹底解説。大阪の未来を左右する重大な議案をわかりやすく！">
+    <meta property="og:type" content="article">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            green: '#004D40',
+                            orange: '#FF7043',
+                            light: '#F5F5F5',
+                            dark: '#1a202c',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Article Styles */
+        .article-body h2 {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: #004D40;
+            border-left: 6px solid #FF7043;
+            padding-left: 1rem;
+            margin: 2.5rem 0 1.2rem;
+            line-height: 1.4;
+        }
+        .article-body h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #004D40;
+            margin: 2rem 0 0.8rem;
+        }
+        .article-body p {
+            line-height: 1.9;
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+        .article-body strong {
+            color: #c0392b;
+            font-weight: 700;
+        }
+        .article-body ul {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.2rem;
+        }
+        .article-body ul li {
+            padding: 0.4rem 0 0.4rem 1.8rem;
+            position: relative;
+            line-height: 1.8;
+        }
+        .article-body ul li::before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #FF7043;
+            font-size: 0.8rem;
+            top: 0.5rem;
+        }
+        .callout-box {
+            background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+            border-left: 5px solid #004D40;
+            border-radius: 0 12px 12px 0;
+            padding: 1.2rem 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .callout-box.orange {
+            background: linear-gradient(135deg, #fff3e0, #fce4ec);
+            border-left-color: #FF7043;
+        }
+        .callout-box.blue {
+            background: linear-gradient(135deg, #e3f2fd, #e8eaf6);
+            border-left-color: #1565C0;
+        }
+        .callout-box.red {
+            background: linear-gradient(135deg, #fce4ec, #fff3e0);
+            border-left-color: #c0392b;
+        }
+        .callout-title {
+            font-weight: 900;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .highlight-box {
+            background: #004D40;
+            color: white;
+            border-radius: 16px;
+            padding: 1.5rem 2rem;
+            margin: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-box::before {
+            content: "";
+            position: absolute;
+            top: -30px; right: -30px;
+            width: 120px; height: 120px;
+            background: rgba(255,112,67,0.25);
+            border-radius: 50%;
+        }
+        .highlight-box::after {
+            content: "";
+            position: absolute;
+            bottom: -20px; left: -20px;
+            width: 80px; height: 80px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+        .step-card {
+            border: 2px solid #e0e0e0;
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            margin: 1rem 0;
+            position: relative;
+            background: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .step-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+        }
+        .step-number {
+            position: absolute;
+            top: -14px; left: 20px;
+            background: #FF7043;
+            color: white;
+            border-radius: 50%;
+            width: 32px; height: 32px;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 900;
+            font-size: 0.9rem;
+        }
+        .faq-item {
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+            border: 1px solid #e0e0e0;
+        }
+        .faq-q {
+            background: #004D40;
+            color: white;
+            padding: 1rem 1.2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            cursor: pointer;
+        }
+        .faq-a {
+            background: #f9fafb;
+            padding: 1rem 1.2rem;
+            line-height: 1.8;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.7rem;
+            font-size: 0.97rem;
+        }
+        .progress-bar {
+            height: 10px;
+            border-radius: 5px;
+            background: #e0e0e0;
+            overflow: hidden;
+            margin: 0.5rem 0;
+        }
+        .progress-fill {
+            height: 100%;
+            border-radius: 5px;
+            transition: width 0.8s ease;
+        }
+        .table-custom {
+            width: 100%;
+            border-collapse: collapse;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+        .table-custom th {
+            background: #004D40;
+            color: white;
+            padding: 0.8rem 1rem;
+            text-align: left;
+            font-weight: 700;
+        }
+        .table-custom td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            line-height: 1.7;
+        }
+        .table-custom tr:nth-child(even) td {
+            background: #f5f5f5;
+        }
+        .table-custom tr:last-child td {
+            border-bottom: none;
+        }
+        .timeline-item {
+            display: flex;
+            gap: 1.2rem;
+            margin-bottom: 1.5rem;
+            align-items: flex-start;
+        }
+        .timeline-dot {
+            min-width: 44px; height: 44px;
+            border-radius: 50%;
+            background: #004D40;
+            color: white;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: 900;
+            font-size: 0.75rem;
+            text-align: center;
+            line-height: 1.2;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+        .timeline-dot.orange { background: #FF7043; }
+        .timeline-dot.gray { background: #9e9e9e; }
+        .share-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.7rem 1.4rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+        }
+        .share-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.15); }
+
+        /* Floating TOC */
+        .toc-box {
+            background: white;
+            border: 2px solid #004D40;
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            margin: 2rem 0;
+        }
+        .toc-box a {
+            color: #004D40;
+            text-decoration: none;
+            font-size: 0.93rem;
+            display: block;
+            padding: 0.25rem 0 0.25rem 1rem;
+            border-left: 3px solid transparent;
+            transition: all 0.2s;
+        }
+        .toc-box a:hover {
+            border-left-color: #FF7043;
+            color: #FF7043;
+            padding-left: 1.4rem;
+        }
+
+        @media (max-width: 640px) {
+            .article-body h2 { font-size: 1.2rem; }
+            .article-body p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <div class="w-9 h-9 bg-brand-green rounded-full flex items-center justify-center text-white font-bold text-lg group-hover:bg-brand-orange transition-colors">道</div>
+                <div class="flex flex-col">
+                    <span class="text-xs text-gray-500 leading-tight">大阪府議会議員</span>
+                    <span class="text-lg font-bold text-brand-green leading-tight">道端 俊彦</span>
+                </div>
+            </a>
+            <div class="flex items-center gap-3">
+                <span class="hidden sm:inline-block bg-brand-orange/10 text-brand-orange text-xs font-bold px-3 py-1 rounded-full">政策NOTE</span>
+                <a href="index.html" class="text-sm text-gray-500 hover:text-brand-green transition-colors font-medium">
+                    <i class="fas fa-home mr-1"></i>TOPへ戻る
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Article Header -->
+    <div class="bg-gradient-to-br from-brand-green via-teal-700 to-teal-900 text-white py-16 px-4">
+        <div class="max-w-3xl mx-auto">
+            <div class="flex flex-wrap gap-2 mb-5">
+                <span class="bg-brand-orange text-white text-xs font-bold px-3 py-1 rounded-full">📚 保存版 解説</span>
+                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">🏙️ 大阪都構想</span>
+                <span class="bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full">📋 法定協議会</span>
+            </div>
+            <h1 class="text-2xl sm:text-3xl md:text-4xl font-black leading-snug mb-5">
+                「大阪都構想」の法定協議会<br>設置議案って何？<br>
+                <span class="text-brand-orange">小学生でもわかる</span>徹底解説！
+            </h1>
+            <p class="text-teal-100 text-base sm:text-lg leading-relaxed mb-6">
+                難しそうに見えて、実は大阪に住む全員に関係する大事な話です。<br>
+                大阪府議会議員・道端俊彦が現場目線でわかりやすく解説します。
+            </p>
+            <div class="flex flex-wrap items-center gap-5 text-teal-200 text-sm">
+                <span><i class="far fa-calendar-alt mr-1"></i>2026年5月</span>
+                <span><i class="far fa-clock mr-1"></i>読了時間：約10分</span>
+                <span><i class="fas fa-user mr-1"></i>道端 俊彦（大阪府議会議員）</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="max-w-3xl mx-auto px-4 py-10">
+
+        <!-- Author Card -->
+        <div class="flex items-center gap-4 bg-white rounded-2xl shadow-sm border border-gray-100 p-4 mb-8">
+            <div class="w-14 h-14 bg-brand-green rounded-full flex items-center justify-center text-white font-black text-2xl flex-shrink-0">道</div>
+            <div>
+                <p class="font-bold text-brand-green">道端 俊彦（みちばた としひこ）</p>
+                <p class="text-sm text-gray-500">大阪府議会議員｜河内長野市選出｜日本維新の会</p>
+                <p class="text-xs text-gray-400 mt-0.5">現場第一主義で、住民目線の政治を推進。大阪府政と市政改革に取り組む。</p>
+            </div>
+        </div>
+
+        <!-- TOC -->
+        <div class="toc-box">
+            <p class="font-black text-brand-green mb-3 flex items-center gap-2">
+                <i class="fas fa-list-ul"></i> もくじ
+            </p>
+            <a href="#intro">はじめに：なぜ今この話が大事なの？</a>
+            <a href="#what-is-toshiko">① 大阪都構想ってそもそも何？</a>
+            <a href="#what-is-kyougikai">② 法定協議会って何？</a>
+            <a href="#process">③ 設置議案とは？どうやって決まるの？</a>
+            <a href="#members">④ 誰が参加するの？</a>
+            <a href="#why-now">⑤ なぜ今また動き出すの？</a>
+            <a href="#merit-demerit">⑥ メリットとデメリット、正直に解説</a>
+            <a href="#timeline">⑦ 今後のスケジュール</a>
+            <a href="#faq">⑧ よくある質問コーナー</a>
+            <a href="#conclusion">まとめ：大阪の未来を一緒に考えよう</a>
+        </div>
+
+        <article class="article-body">
+
+            <!-- INTRO -->
+            <section id="intro">
+                <h2>はじめに：なぜ今この話が大事なの？</h2>
+
+                <div class="callout-box orange">
+                    <p class="callout-title"><span>🔥</span> この記事が生まれた理由</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        「法定協議会の設置議案」というニュースを見ても、「難しそう…自分には関係ない話かな」と思っていませんか？実は、大阪に住む<strong>すべての人の生活</strong>に直結する、超重要な話です！
+                    </p>
+                </div>
+
+                <p>
+                    大阪府議会では今、「<strong>大阪都構想</strong>」を実現するための重要な第一歩となる<strong>「法定協議会の設置議案」</strong>が議論されています。
+                </p>
+                <p>
+                    過去に2回（2015年・2020年）住民投票が行われ、2回とも「反対多数」でいったん立ち消えになった大阪都構想。しかし<strong>大阪・関西万博が閉幕した2025年以降</strong>、大阪維新の会を中心に、三度目の挑戦に向けて議論が再始動しています。
+                </p>
+                <p>
+                    この記事では、<strong>小学生でもわかるやさしい言葉</strong>で、でも<strong>プロ並みの深さ</strong>で、この問題を徹底的に解説します！
+                </p>
+            </section>
+
+            <!-- SECTION 1 -->
+            <section id="what-is-toshiko">
+                <h2>① 大阪都構想ってそもそも何？</h2>
+
+                <div class="highlight-box">
+                    <p class="text-xl font-black mb-2 relative z-10">🏙️ 一言で言うと…</p>
+                    <p class="text-lg font-bold relative z-10">「大阪市をなくして、<br>東京みたいに特別区をつくろう！」という計画</p>
+                </div>
+
+                <h3>もう少しくわしく説明すると…</h3>
+
+                <p>
+                    今の大阪には<strong>「大阪府」</strong>と<strong>「大阪市」</strong>という2つの行政機関があります。それぞれが学校・病院・道路・観光などの仕事をしています。ところが、同じ場所で同じような仕事をしていることがよくあって、これが<strong>「二重行政（にじゅうぎょうせい）」</strong>と呼ばれる問題です。
+                </p>
+
+                <div class="step-card">
+                    <div class="step-number">例</div>
+                    <p style="margin: 1rem 0 0; font-size:0.95rem; line-height:1.8;">
+                        大阪府も大阪市も、それぞれ別々に「国際会議場」を建てた時期がありました。同じ目的の施設を税金で2つ作るのは、お金のムダ遣いでは？という批判が起きました。
+                    </p>
+                </div>
+
+                <p>大阪都構想はこの問題を解決するために、次のような仕組みをつくろうとしています：</p>
+
+                <ul>
+                    <li>大阪市を廃止して、新しく<strong>「特別区」</strong>という区をいくつかつくる（案によって4区・8区など）</li>
+                    <li>大きな仕事（道路・港・大規模施設など）は<strong>大阪府</strong>がまとめて担当</li>
+                    <li>住民に身近なサービス（保育・ゴミ収集・地域の相談など）は<strong>各特別区</strong>が担当</li>
+                    <li>役割分担をはっきりさせることで、税金の無駄を減らして、行政の効率を上げる</li>
+                </ul>
+
+                <div class="callout-box blue">
+                    <p class="callout-title"><i class="fas fa-map-marker-alt text-blue-700"></i> 東京との比較でわかる！</p>
+                    <table class="table-custom" style="margin:0.5rem 0 0;">
+                        <thead>
+                            <tr><th>項目</th><th>東京（現在）</th><th>大阪都構想のイメージ</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>大きな行政</td><td>東京都</td><td>大阪府（強化）</td></tr>
+                            <tr><td>身近な行政</td><td>新宿区・渋谷区など</td><td>特別区（新設）</td></tr>
+                            <tr><td>政令指定都市</td><td>なし</td><td>大阪市を廃止</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- SECTION 2 -->
+            <section id="what-is-kyougikai">
+                <h2>② 法定協議会って何？</h2>
+
+                <div class="callout-box">
+                    <p class="callout-title"><i class="fas fa-lightbulb text-green-700"></i> やさしく言うと…</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        <strong>「都構想のルールを法律に基づいてきちんと話し合う会議の場」</strong>のことです。
+                        "法定" ＝ 法律で決められた、"協議会" ＝ みんなで話し合う場所、という意味です。
+                    </p>
+                </div>
+
+                <p>
+                    大阪都構想を実現するためには、「<strong>大都市地域における特別区の設置に関する法律</strong>（大都市法）」という法律に基づいて、正式な話し合いをしなければなりません。
+                </p>
+
+                <p>
+                    法定協議会の正式な名前は<strong>「大阪府・大阪市特別区設置協議会」</strong>です。ここでは次のような大事な設計図（制度設計）を詳細に決めていきます：
+                </p>
+
+                <ul>
+                    <li>特別区をいくつ作るか（区割り案）</li>
+                    <li>それぞれの特別区の名前・区役所の場所</li>
+                    <li>大阪府と特別区で仕事をどう分けるか</li>
+                    <li>お金（財源・税金）をどう分けるか</li>
+                    <li>住民サービスが下がらないようにするための対策</li>
+                    <li>職員の配置・組織の移管方法</li>
+                    <li>移行にかかるコスト（初期費用）の試算</li>
+                </ul>
+
+                <div class="callout-box orange">
+                    <p class="callout-title"><span>⚠️</span> 重要ポイント</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        法定協議会が協議書（合意した内容）を作成し、<strong>大阪府議会・大阪市議会の両方で過半数の賛成</strong>を得て、さらに<strong>住民投票</strong>で賛成多数になって初めて、都構想が実現します。つまり、法定協議会はスタートラインに過ぎません！
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 3 -->
+            <section id="process">
+                <h2>③ 設置議案とは？どうやって決まるの？</h2>
+
+                <p>
+                    「設置議案」とは、<strong>「法定協議会を作ることを議会で正式に提案・決議する」</strong>ための議案です。設置議案が可決されると、法定協議会が正式に立ち上がり、話し合いがスタートします。
+                </p>
+
+                <h3>設置議案が可決されるまでの流れ</h3>
+
+                <div class="step-card mt-6">
+                    <div class="step-number">1</div>
+                    <p style="margin-top: 1rem; font-size:0.95rem; line-height:1.8;">
+                        <strong>知事または市長が議案を提出する</strong><br>
+                        大阪府知事（吉村洋文氏）または大阪市長が、それぞれの議会に「法定協議会を設置したい」という議案を提出します。
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <p style="margin-top: 1rem; font-size:0.95rem; line-height:1.8;">
+                        <strong>大阪府議会・大阪市議会の両方で採決</strong><br>
+                        設置議案は、<strong>大阪府議会と大阪市議会の両方</strong>で過半数（議員の半分より多く）の賛成が必要です。どちらか一方でも反対多数になると設置できません。
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <p style="margin-top: 1rem; font-size:0.95rem; line-height:1.8;">
+                        <strong>法定協議会が正式に設立</strong><br>
+                        両議会で可決されると、法定協議会が設立され、委員が選ばれ、実際の議論がスタートします。
+                    </p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">4</div>
+                    <p style="margin-top: 1rem; font-size:0.95rem; line-height:1.8;">
+                        <strong>協議書（制度設計）の完成・議会承認・住民投票</strong><br>
+                        協議が整ったら「協議書」を作成→議会承認→住民投票という最終ステップへ進みます。
+                    </p>
+                </div>
+
+                <div class="callout-box blue">
+                    <p class="callout-title"><i class="fas fa-calculator text-blue-700"></i> 議席数の現実（2026年時点の参考値）</p>
+                    <p style="margin:0 0 0.7rem; font-size:0.9rem;">過半数ラインを超えられるかが最大の焦点です：</p>
+                    <table class="table-custom" style="margin:0; font-size:0.88rem;">
+                        <thead>
+                            <tr><th>議会</th><th>定数</th><th>過半数ライン</th><th>維新系議席（参考）</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>大阪府議会</td><td>79</td><td>40</td><td>約49（単独過半数）</td></tr>
+                            <tr><td>大阪市議会</td><td>81</td><td>41</td><td>約38（単独では届かず）</td></tr>
+                        </tbody>
+                    </table>
+                    <p style="margin:0.7rem 0 0; font-size:0.85rem; color:#555;">※議席数は時期や選挙結果によって変動します。最新情報は各議会公式サイトでご確認ください。</p>
+                </div>
+            </section>
+
+            <!-- SECTION 4 -->
+            <section id="members">
+                <h2>④ 誰が参加するの？</h2>
+
+                <p>
+                    法定協議会の委員（メンバー）は、大都市法によって決まっています。政治家だけでなく、有識者・専門家も加わります。
+                </p>
+
+                <table class="table-custom">
+                    <thead>
+                        <tr><th>委員の種類</th><th>人数</th><th>主な役割</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>大阪府知事</strong></td>
+                            <td>1名</td>
+                            <td>府側のトップとして協議をリード</td>
+                        </tr>
+                        <tr>
+                            <td><strong>大阪市長</strong></td>
+                            <td>1名</td>
+                            <td>市側のトップとして協議に参加</td>
+                        </tr>
+                        <tr>
+                            <td><strong>大阪府議会議員</strong></td>
+                            <td>各会派から選出</td>
+                            <td>府民の代表として意見を反映</td>
+                        </tr>
+                        <tr>
+                            <td><strong>大阪市議会議員</strong></td>
+                            <td>各会派から選出</td>
+                            <td>市民の代表として意見を反映</td>
+                        </tr>
+                        <tr>
+                            <td><strong>学識経験者</strong></td>
+                            <td>若干名</td>
+                            <td>行政・財政・法律の専門的観点から助言</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="callout-box">
+                    <p class="callout-title"><i class="fas fa-info-circle text-green-700"></i> 野党も参加する？</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        法定協議会には賛成派・反対派を問わず、議会の各会派から委員が選ばれます。過去の協議会では、自民党・公明党・共産党の委員も参加し、<strong>「なぜこの計画では住民サービスが守れないのか」</strong>といった反対意見も正面から議論されました。これは民主的な議論のための重要な仕組みです。
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 5 -->
+            <section id="why-now">
+                <h2>⑤ なぜ今また動き出すの？</h2>
+
+                <p>
+                    2020年11月の住民投票では、わずか<strong>1万7000票差（得票率49.4% vs 50.6%）</strong>という僅差で否決されました。その後、松井一郎・前大阪市長の任期満了を機に都構想は「凍結」状態となりましたが、2025年の万博閉幕とともに再び議論が活発化しています。
+                </p>
+
+                <h3>再始動の主な理由</h3>
+
+                <ul>
+                    <li><strong>万博レガシー：</strong>2025年大阪・関西万博を経て、大阪の国際競争力をさらに高める制度改革が必要と維新が主張</li>
+                    <li><strong>財政の効率化：</strong>少子高齢化・人口減少時代に、二重行政の無駄を排除する必要性がさらに高まっている</li>
+                    <li><strong>維新の議席維持：</strong>2023年の統一地方選で府議会では単独過半数を維持。政治的な推進力がある</li>
+                    <li><strong>前回の反省と改善：</strong>前回の住民投票での否決を踏まえ、区割り・財政シミュレーションなどを改善した「新プラン」を提示する方針</li>
+                </ul>
+
+                <div class="callout-box red">
+                    <p class="callout-title"><span>📊</span> 過去2回の住民投票の結果</p>
+                    <div style="margin-top:0.5rem;">
+                        <p style="font-size:0.9rem; font-weight:700; margin:0.5rem 0 0.3rem;">2015年5月17日</p>
+                        <div style="display:flex; gap:0.5rem; align-items:center; font-size:0.85rem;">
+                            <span style="min-width:40px; color:#c0392b;">反対</span>
+                            <div class="progress-bar" style="flex:1;"><div class="progress-fill" style="width:50.38%; background:#c0392b;"></div></div>
+                            <span style="min-width:55px; text-align:right; color:#c0392b; font-weight:700;">50.38%</span>
+                        </div>
+                        <div style="display:flex; gap:0.5rem; align-items:center; font-size:0.85rem; margin-top:0.3rem;">
+                            <span style="min-width:40px; color:#004D40;">賛成</span>
+                            <div class="progress-bar" style="flex:1;"><div class="progress-fill" style="width:49.62%; background:#004D40;"></div></div>
+                            <span style="min-width:55px; text-align:right; color:#004D40; font-weight:700;">49.62%</span>
+                        </div>
+
+                        <p style="font-size:0.9rem; font-weight:700; margin:1rem 0 0.3rem;">2020年11月1日</p>
+                        <div style="display:flex; gap:0.5rem; align-items:center; font-size:0.85rem;">
+                            <span style="min-width:40px; color:#c0392b;">反対</span>
+                            <div class="progress-bar" style="flex:1;"><div class="progress-fill" style="width:50.63%; background:#c0392b;"></div></div>
+                            <span style="min-width:55px; text-align:right; color:#c0392b; font-weight:700;">50.63%</span>
+                        </div>
+                        <div style="display:flex; gap:0.5rem; align-items:center; font-size:0.85rem; margin-top:0.3rem;">
+                            <span style="min-width:40px; color:#004D40;">賛成</span>
+                            <div class="progress-bar" style="flex:1;"><div class="progress-fill" style="width:49.37%; background:#004D40;"></div></div>
+                            <span style="min-width:55px; text-align:right; color:#004D40; font-weight:700;">49.37%</span>
+                        </div>
+                        <p style="font-size:0.8rem; color:#888; margin:0.7rem 0 0;">差はわずか。大阪市民の意見がほぼ真っ二つに割れていることを示しています。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION 6 -->
+            <section id="merit-demerit">
+                <h2>⑥ メリットとデメリット、正直に解説</h2>
+
+                <p>都構想には、<strong>賛成派が主張するメリット</strong>と<strong>反対派が指摘するデメリット</strong>の両方があります。どちらも正面から見ておきましょう。</p>
+
+                <h3>✅ 賛成派が主張するメリット</h3>
+
+                <ul>
+                    <li><strong>二重行政の解消：</strong>府と市がバラバラにやっていた仕事を一本化することで、無駄な税金の使い方をなくせる</li>
+                    <li><strong>広域行政の強化：</strong>道路・港湾・大学・医療など、大阪全体を一体的に動かす政策が実現しやすくなる</li>
+                    <li><strong>住民サービスの身近化：</strong>特別区ができることで、地域の住民に近いところで生活支援サービスが提供される</li>
+                    <li><strong>財政効果：</strong>大阪市の分析（前回協議会）では年間218億円の財政効果を試算（計算根拠については議論あり）</li>
+                    <li><strong>大阪の国際競争力アップ：</strong>東京と同様の仕組みで、海外都市と戦える行政体制に</li>
+                </ul>
+
+                <h3>❌ 反対派が指摘するデメリット・懸念</h3>
+
+                <ul>
+                    <li><strong>移行コストの問題：</strong>システム・組織・職員の再編に莫大な初期費用（前回の試算で約660億円超）がかかる</li>
+                    <li><strong>住民サービスの低下リスク：</strong>特別区の財政規模が小さくなり、今のような手厚いサービスが維持できなくなる恐れ</li>
+                    <li><strong>大阪市の"格下げ"：</strong>政令指定都市としての強い権限・財源が失われる</li>
+                    <li><strong>財政シミュレーションの信頼性：</strong>前回の試算に楽観的な想定が多いとの指摘</li>
+                    <li><strong>一度廃止したら元に戻せない：</strong>大阪市という自治体を廃止すると、取り返しがつかない</li>
+                </ul>
+
+                <div class="callout-box">
+                    <p class="callout-title"><i class="fas fa-balance-scale text-green-700"></i> 道端俊彦の視点</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        私は、<strong>二重行政の解消と広域行政の一体化</strong>という方向性には賛同しています。ただし、制度設計の詳細（財政試算・区割り・住民サービスの移行計画）については、法定協議会の場で<strong>徹底的に透明な議論</strong>を行うことが不可欠だと考えています。住民の皆さんが正確な情報のもとで判断できる環境を整えることが、私たち議員の責務です。
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 7: TIMELINE -->
+            <section id="timeline">
+                <h2>⑦ 今後のスケジュール（見通し）</h2>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot orange">2025<br>年</div>
+                    <div>
+                        <p style="font-weight:700; margin:0 0 0.3rem; font-size:0.95rem;">大阪・関西万博閉幕 → 都構想再議論の機運が高まる</p>
+                        <p style="color:#666; font-size:0.88rem; margin:0;">万博の成果を次の制度改革につなげる、との機運が維新内部で高まる。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">設置<br>議案</div>
+                    <div>
+                        <p style="font-weight:700; margin:0 0 0.3rem; font-size:0.95rem;">設置議案の提出・採決（大阪府議会・大阪市議会）</p>
+                        <p style="color:#666; font-size:0.88rem; margin:0;">知事・市長が両議会に設置議案を提出。両議会で過半数の賛成が得られれば法定協議会が設立へ。市議会での可否が最大の焦点。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">協議<br>会</div>
+                    <div>
+                        <p style="font-weight:700; margin:0 0 0.3rem; font-size:0.95rem;">法定協議会スタート → 制度設計の議論</p>
+                        <p style="color:#666; font-size:0.88rem; margin:0;">区割り案・財政試算・サービス移行計画などを詳細に協議。前回は約2年かかっている。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot">協議<br>書</div>
+                    <div>
+                        <p style="font-weight:700; margin:0 0 0.3rem; font-size:0.95rem;">協議書の完成 → 両議会承認</p>
+                        <p style="color:#666; font-size:0.88rem; margin:0;">協議書が完成したら、再び府議会・市議会で承認が必要。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot orange">住民<br>投票</div>
+                    <div>
+                        <p style="font-weight:700; margin:0 0 0.3rem; font-size:0.95rem;">住民投票（大阪市民が決める！）</p>
+                        <p style="color:#666; font-size:0.88rem; margin:0;">大阪市に住む有権者が直接投票で賛否を決める。賛成多数になって初めて都構想が実現する。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot gray">移行<br>期間</div>
+                    <div>
+                        <p style="font-weight:700; margin:0 0 0.3rem; font-size:0.95rem;">（賛成の場合）移行準備 → 特別区設置</p>
+                        <p style="color:#666; font-size:0.88rem; margin:0;">住民投票から実際の特別区設置まで数年の準備期間が必要。</p>
+                    </div>
+                </div>
+
+                <div class="callout-box orange">
+                    <p class="callout-title"><span>⏰</span> 重要なポイント</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        法定協議会の設置はあくまで「制度設計の議論をスタートさせる」第一歩に過ぎません。その後に議会承認・住民投票という複数のハードルが残っています。設置議案が可決されても、<strong>都構想が自動的に実現するわけではありません！</strong>
+                    </p>
+                </div>
+            </section>
+
+            <!-- SECTION 8: FAQ -->
+            <section id="faq">
+                <h2>⑧ よくある質問コーナー</h2>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span style="font-size:1.2rem; flex-shrink:0;">Q</span>
+                        <span>大阪市がなくなったら、大阪市民は困らないの？</span>
+                    </div>
+                    <div class="faq-a">
+                        <span style="font-size:1.2rem; font-weight:900; color:#FF7043; flex-shrink:0;">A</span>
+                        <span>「大阪市」という名前の自治体はなくなりますが、住民サービス（保育・介護・ゴミ収集など）は新しい特別区が引き継ぎます。ただし、<strong>各特別区の財政規模が現在の大阪市より小さくなる</strong>ため、一部サービスの水準が下がる可能性があると反対派は指摘しています。この点は法定協議会で徹底的に議論される予定です。</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span style="font-size:1.2rem; flex-shrink:0;">Q</span>
+                        <span>大阪府外の人（堺市・東大阪市など）には関係あるの？</span>
+                    </div>
+                    <div class="faq-a">
+                        <span style="font-size:1.2rem; font-weight:900; color:#FF7043; flex-shrink:0;">A</span>
+                        <span>直接の住民投票権はありませんが、<strong>大阪府全体の行政体制が変わる</strong>ため、府内の市町村すべてに影響があります。広域行政（道路・インフラ・産業政策）が変われば、大阪府全体の住民の生活にも間接的に影響します。</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span style="font-size:1.2rem; flex-shrink:0;">Q</span>
+                        <span>法定協議会の議論はどこで見られるの？</span>
+                    </div>
+                    <div class="faq-a">
+                        <span style="font-size:1.2rem; font-weight:900; color:#FF7043; flex-shrink:0;">A</span>
+                        <span>法定協議会の会議は原則として公開されます。大阪府・大阪市の公式ウェブサイトや、議会の議事録公開システムで会議録・資料を閲覧できます。住民が情報にアクセスできる透明性の確保が大切です。</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span style="font-size:1.2rem; flex-shrink:0;">Q</span>
+                        <span>3回目の住民投票で負けたらどうなるの？</span>
+                    </div>
+                    <div class="faq-a">
+                        <span style="font-size:1.2rem; font-weight:900; color:#FF7043; flex-shrink:0;">A</span>
+                        <span>法律上は何度でも挑戦できます。ただし、<strong>政治的な現実として、3度の否決は都構想の議論にとって大きなダメージ</strong>になります。2020年の住民投票後、松井前市長は「この結果を尊重する」と述べ、任期中の再挑戦を否定した経緯があります。</span>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-q">
+                        <span style="font-size:1.2rem; flex-shrink:0;">Q</span>
+                        <span>子どもたちの生活はどう変わるの？</span>
+                    </div>
+                    <div class="faq-a">
+                        <span style="font-size:1.2rem; font-weight:900; color:#FF7043; flex-shrink:0;">A</span>
+                        <span>学校・保育所・子ども医療費助成などは特別区に移管される予定です。<strong>各区が地域の実情に合わせて柔軟に施策を打てる</strong>ようになる一方で、区によってサービス格差が生まれる可能性も指摘されています。子育て世代にとっては最も注目すべき論点の一つです。</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONCLUSION -->
+            <section id="conclusion">
+                <h2>まとめ：大阪の未来を一緒に考えよう</h2>
+
+                <div class="highlight-box">
+                    <p class="text-lg font-black mb-4 relative z-10">📝 この記事のまとめ</p>
+                    <ul style="list-style:none; padding:0; position:relative; z-index:10;">
+                        <li style="padding: 0.4rem 0 0.4rem 2rem; position:relative; line-height:1.8;">
+                            <span style="position:absolute; left:0; font-size:1.1rem;">✅</span>
+                            大阪都構想 ＝ 大阪市を廃止し、特別区をつくって二重行政を解消する計画
+                        </li>
+                        <li style="padding: 0.4rem 0 0.4rem 2rem; position:relative; line-height:1.8;">
+                            <span style="position:absolute; left:0; font-size:1.1rem;">✅</span>
+                            法定協議会 ＝ 都構想の制度設計を法律に基づいて話し合う正式な場
+                        </li>
+                        <li style="padding: 0.4rem 0 0.4rem 2rem; position:relative; line-height:1.8;">
+                            <span style="position:absolute; left:0; font-size:1.1rem;">✅</span>
+                            設置議案 ＝ その協議会を作ることを議会で正式に提案する議案
+                        </li>
+                        <li style="padding: 0.4rem 0 0.4rem 2rem; position:relative; line-height:1.8;">
+                            <span style="position:absolute; left:0; font-size:1.1rem;">✅</span>
+                            両議会で過半数 → 協議 → 協議書 → 議会承認 → 住民投票 という長い道のり
+                        </li>
+                        <li style="padding: 0.4rem 0 0.4rem 2rem; position:relative; line-height:1.8;">
+                            <span style="position:absolute; left:0; font-size:1.1rem;">✅</span>
+                            2回の住民投票で否決後、3回目の挑戦に向けて議論が再始動
+                        </li>
+                        <li style="padding: 0.4rem 0 0.4rem 2rem; position:relative; line-height:1.8;">
+                            <span style="position:absolute; left:0; font-size:1.1rem;">✅</span>
+                            最終的には大阪市民が住民投票で決める！
+                        </li>
+                    </ul>
+                </div>
+
+                <p>
+                    「都構想」は賛成・反対、どちらが正しいという単純な問題ではありません。大阪の未来をどうするか、<strong>住民一人ひとりが考え、選択する</strong>民主主義の問題です。
+                </p>
+                <p>
+                    私・道端俊彦は、<strong>どちらの立場の意見も、きちんと議会で聞かれ、透明な議論が行われること</strong>を最優先に考えています。そして法定協議会の場で、住民が正しい情報を持って判断できるよう、情報発信を続けていきます。
+                </p>
+
+                <div class="callout-box orange" style="margin-top:2rem;">
+                    <p class="callout-title"><span>🗳️</span> あなたの声を聞かせてください！</p>
+                    <p style="margin:0; font-size:0.95rem; line-height:1.8;">
+                        大阪都構想について、あなたはどう思いますか？賛成？反対？まだわからない？<br>
+                        地域の意見を府政に届けるのが私の仕事です。ぜひ<strong>お問い合わせフォーム・SNS</strong>からご意見をお寄せください！
+                    </p>
+                </div>
+            </section>
+
+        </article>
+
+        <!-- Share Buttons -->
+        <div class="mt-10 pt-8 border-t border-gray-200">
+            <p class="font-bold text-center text-gray-700 mb-4">この記事をシェアして、大阪の議論を広めよう！</p>
+            <div class="flex flex-wrap justify-center gap-3">
+                <button class="share-btn" style="background:#1da1f2; color:white;">
+                    <i class="fab fa-twitter"></i> Xでシェア
+                </button>
+                <button class="share-btn" style="background:#06c755; color:white;">
+                    <i class="fab fa-line"></i> LINEで送る
+                </button>
+                <button class="share-btn" style="background:#1877f2; color:white;">
+                    <i class="fab fa-facebook"></i> Facebook
+                </button>
+                <button id="copy-btn" class="share-btn" style="background:#004D40; color:white;">
+                    <i class="fas fa-copy"></i> URLをコピー
+                </button>
+            </div>
+        </div>
+
+        <!-- Related Articles / CTA -->
+        <div class="mt-10 grid sm:grid-cols-2 gap-4">
+            <a href="index.html#policy" class="block bg-white rounded-2xl shadow-sm border border-gray-100 p-5 hover:shadow-md hover:-translate-y-1 transition-all">
+                <span class="text-xs font-bold text-brand-orange bg-brand-orange/10 px-2 py-0.5 rounded-full">政策</span>
+                <p class="font-black text-brand-green mt-2 mb-1">道端俊彦の「3本の矢」政策</p>
+                <p class="text-sm text-gray-500">大阪改革・子育て・地域活性化の3つの柱について</p>
+            </a>
+            <a href="index.html#contact" class="block bg-brand-green text-white rounded-2xl shadow-sm p-5 hover:shadow-md hover:-translate-y-1 transition-all">
+                <span class="text-xs font-bold text-teal-200">お問い合わせ</span>
+                <p class="font-black mt-2 mb-1">あなたの意見を府政に届けよう</p>
+                <p class="text-sm text-teal-100">都構想について、ご意見・ご質問をお寄せください</p>
+            </a>
+        </div>
+
+        <!-- Footer Note -->
+        <div class="mt-10 text-center text-xs text-gray-400 leading-relaxed">
+            <p>本記事は2026年5月時点の情報に基づいて作成されています。</p>
+            <p>議席数・制度の詳細は変更になる場合があります。最新情報は大阪府・大阪市の公式情報をご確認ください。</p>
+            <p class="mt-2">© 2026 道端俊彦 大阪府議会議員事務所</p>
+        </div>
+    </main>
+
+    <!-- Back to Top -->
+    <button id="back-top" class="fixed bottom-6 right-6 w-12 h-12 bg-brand-green text-white rounded-full shadow-lg flex items-center justify-center hover:bg-brand-orange transition-colors opacity-0 pointer-events-none z-50" style="transition: opacity 0.3s, background 0.2s;">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top
+        const backTop = document.getElementById('back-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                backTop.style.opacity = '1';
+                backTop.style.pointerEvents = 'auto';
+            } else {
+                backTop.style.opacity = '0';
+                backTop.style.pointerEvents = 'none';
+            }
+        });
+        backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+        // Copy URL
+        document.getElementById('copy-btn').addEventListener('click', function () {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                this.innerHTML = '<i class="fas fa-check"></i> コピーしました！';
+                setTimeout(() => {
+                    this.innerHTML = '<i class="fas fa-copy"></i> URLをコピー';
+                }, 2000);
+            });
+        });
+
+        // Progress bars animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.querySelectorAll('.progress-fill').forEach(bar => {
+                        bar.style.width = bar.getAttribute('data-width') || bar.style.width;
+                    });
+                }
+            });
+        }, { threshold: 0.3 });
+        document.querySelectorAll('.progress-bar').forEach(b => observer.observe(b.parentElement));
+    </script>
+</body>
+</html>
